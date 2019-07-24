@@ -26,5 +26,8 @@ All you have to do is add an event listener to capture the message:
 # Run this project
 It is silly, just execute the commands bellow
 
-`$ npm install marked`
-`$ http-server marked`
+Install the dependencies
+`npm install`
+
+Run the server
+`http-server`
