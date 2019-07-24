@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <Title>Task Plugin Page</Title>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/app.js"></script>        
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+        <link rel="stylesheet" type="text/css" href="./assets/app.css"> 
+    </head>
+    <body>
+        
+        <div class="container">
+                <h5>Hi, I'm a task screen plugin</h5>
+                <p class="form-group">I've just received the message bellow from task</p>
+                <textarea id="task-context" class="form-control form-group"></textarea>
+                
+                <p class="form-group">Click to answer Task</p>
+                <span class="btn btn-success" onclick="sendMessage('done')">DONE</span>                
+                <span class="btn btn-warning" onclick="sendMessage('dismiss')">DISMISS</span>           
+        </div>
+    </body>
+</html>
