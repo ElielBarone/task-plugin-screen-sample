@@ -15,11 +15,20 @@ All you have to do is add an event listener to capture the message:
 
 ```javascript
 
- window.addEventListener('message', handleMessage, false);            
+ window.addEventListener('message', receiveTaskMessage, false);            
           
- function handleMessage (message) {                
+ function receiveTaskMessage (message) {                
     console.log(message)
  }
+```
+
+## How to send messages to task
+All you have to do is add an event listener to capture the message:
+
+```javascript
+
+ parent.postMessage({type: 'done', data: {someData: 'your data sample'}}, '*')
+
 ```
 
 
