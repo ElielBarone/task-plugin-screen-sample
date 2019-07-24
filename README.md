@@ -17,7 +17,14 @@ All you have to do is add an event listener to capture the message:
 
  window.addEventListener('message', handleMessage, false);            
           
-            function handleMessage (message) {                
-                console.log(message)
-            }
+ function handleMessage (message) {                
+    console.log(message)
+ }
 ```
+
+
+# Run this project
+It is silly, just execute the commands bellow
+
+`$ npm install marked`
+`$ http-server marked`
